@@ -1,0 +1,118 @@
+body{ /* Estilização do corpo da página */
+    display: flex; /*Deixando o layout da página flexível*/
+    margin: 0; /*Removendo margens padrão do navegador*/
+    background-color: #fff; /*Definindo a cor de fundo como branco*/
+    min-height: 100vh; /*Garantindo que o corpo ocupe no mínimo a altura total da janela de visualização*/
+}
+.menu-lateral{ /* Estilização do menu lateral */
+    width: 150px; /*Definindo a largura fixa do menu lateral*/
+    background-color: #004E7C; /*Definindo a cor de fundo do menu lateral*/
+    color: white; /*Definindo a cor do texto como branco*/
+    padding: 20px; /*Adicionando espaçamento interno ao menu lateral*/
+}
+.menu-lateral span{ /* Estilização do título do menu lateral */
+    font-size: 24px;  /*Definindo o tamanho da fonte do título*/
+}
+.conta{ /* Estilização da seção de conta do usuário */
+    display: flex; /*Definindo a seção como um contêiner flexível*/
+    align-items: center; /*Alinhando os itens ao centro verticalmente*/
+    gap: 10px; /*Adicionando espaçamento entre os itens*/
+}
+.avatar{ /* Estilização do avatar do usuário */
+    width: 30px; /*Definindo a largura do avatar*/
+}
+.links-conta{ /* Estilização dos links da seção de conta */
+    display: flex; /*Definindo a seção como um contêiner flexível*/
+    flex-direction: column; /*Organizando os links em uma coluna*/
+    gap: 5px; /*Adicionando espaçamento entre os links*/
+    font-size: 18px; /*Definindo o tamanho da fonte dos links*/
+    padding: 15px; /*Adicionando espaçamento interno à seção de links*/
+    border-bottom: 2px solid white /*Adicionando uma borda inferior branca à seção de links*/
+}
+.links-conta a{ /* Estilização dos links */
+    color: white; /*Definindo a cor dos links como branco*/
+}
+.titulo-servicos{ /*Estilizando o título da navegação serviços*/
+    font-size: 24px; /*Definindo o tamanho da fonte do título*/
+    display: flex; /*Definindo o título como um contêiner flexível*/
+    align-items: center;  /*Alinhando os itens ao centro verticalmente*/
+    gap: 10px; /*Adicionando espaçamento entre os itens*/
+}
+.servicos-icone{ /* Estilização do ìcone serviços*/
+    width: 30px; /*Definindo a largura do ícone*/
+}
+
+.links-servicos{ /* Estilização dos links da seção de serviços */
+    display: flex; /*Definindo a seção como um contêiner flexível*/
+    flex-direction: column; /*Organizando os links em uma coluna*/
+    gap: 5px; /*Adicionando espaçamento entre os links*/
+    font-size: 18px; /*Definindo o tamanho da fonte dos links*/
+    padding: 15px; /*Adicionando espaçamento interno à seção de links*/
+    border-bottom: 2px solid white; /*Adicionando uma borda inferior branca à seção de links*/
+}
+.links-servicos a{ /* Estilização dos links */
+    color: white; /*Definindo a cor dos links como branco*/
+}
+header{ /* Estilização do cabeçalho */
+    display: flex; /*Definindo o cabeçalho como um contêiner flexível*/
+    gap: 20px; /*Adicionando espaçamento entre os itens do cabeçalho*/
+    height: 250px; /*Definindo a altura do cabeçalho*/
+    align-items: flex-start ; /*Alinhando os itens ao início verticalmente*/
+}
+main{
+    flex-grow: 1; /*Permitindo o main ocupare o espaço restante disponível*/
+    display: flex; /*Definindo o main como um contêiner flexível*/
+    flex-direction: column; /*Organizando os elementos filhos em uma coluna*/
+    
+}
+.logo{ /*Estilização da classe logo*/
+    padding-top: 20px; /*Adicionando espaçamento superior ao logo*/
+}
+.logo img{ /*Estilização do logo*/
+    width: 500px; /*Definindo a largura do logo*/  
+}
+.slideshow{ /* Estilização do slideshow */
+    width: 55%; /*Definindo a largura do slideshow*/
+    height: 250px; /*Definindo a altura do slideshow*/
+    display: flex; /*Definindo o slideshow como um contêiner flexível*/
+    padding-top: 43px; /*Adicionando espaçamento superior ao slideshow*/
+    position: relative; /*Definindo o posicionamento como relativo para permitir o posicionamento absoluto dos slides*/
+    align-items: center; /*Alinhando os itens ao centro verticalmente*/
+    justify-content: center ; /*Centralizando os itens horizontalmente*/
+}
+
+.slide{ /* Estilização dos slides */
+    position: absolute; /*Posicionando os slides de forma absoluta dentro do slideshow*/
+    width: 100%;/*Definindo a largura dos slides para ocupar toda a largura do slideshow*/
+    height: 100%;/*Definindo a altura dos slides para ocupar toda a altura do slideshow*/
+    opacity: 0;/*Definindo a opacidade inicial dos slides como 0 (invisível)*/
+    transition: opacity 1s ease-in-out; /*Adicionando uma transição suave para a opacidade dos slides*/
+    display: flex; /*Definindo os slides como contêineres flexíveis*/
+    align-items: center; /*Alinhando os itens dos slides ao centro verticalmente*/
+    justify-content: center; /*Centralizando os itens dos slides horizontalmente*/
+}
+.slide.ativado{/* Estilização do slide ativo */
+    opacity: 1; /*Definindo a opacidade do slide ativo como 1 (visível)*/
+}
+.slide img{/* Estilização das imagens dos slides */
+    width: 400px; /*Definindo a largura das imagens dos slides*/
+    max-width: 100%; /*Garantindo que as imagens não ultrapassem a largura do slide*/
+    max-height: 100%; /*Garantindo que as imagens não ultrapassem a altura do slide*/
+    object-fit: contain; /*Mantendo a proporção das imagens dentro do slide*/
+}
+.indicadores{ /* Estilização dos indicadores dos slides */
+    height: 1px;
+    position: absolute; /*Posicionando os indicadores de forma absoluta dentro do slideshow*/
+    bottom: 10px; /*Posicionando os indicadores a 10px do fundo do slideshow*/
+    left: 50%; /*Centralizando os indicadores horizontalmente*/
+    transform: translateX(-50%); /*Ajustando a posição dos indicadores para o centro exato*/
+    display: flex; /*Definindo os indicadores como um contêiner flexível*/
+    gap: 10px; /*Adicionando espaçamento entre os indicadores*/
+    z-index: 10; /*Garantindo que os indicadores fiquem acima dos slides*/
+}
+.indicador{ /* Estilização dos indicadores individuais */
+    width: 12px; /*Definindo a largura dos indicadores*/
+    height: 12px; /*Definindo a altura dos indicadores*/
+    border-radius: 50%; /*Tornando os indicadores circulares*/
+    background: rgba(0, 0, 0, 0.7); /*Definindo a cor de fundo dos indicadores*/
+}
