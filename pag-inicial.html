@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CrediFácil</title>
+    <link rel="stylesheet" href="css/pag-inicial.css">
+</head>
+<body>
+    <!--Criando o menu lateral-->
+    <aside class="menu-lateral">
+        <div class="conta"> <!--Aqui ficará o ícone e o título "Conta"-->
+            <img src="icons/login-usuario.png" alt="Avatar Usuário" class="avatar">
+            <span>Conta</span>
+        </div>
+        <!--Criando uma navegação única para os links da conta e para ajustes-->
+        <nav>
+            <ul class="links-conta">
+                <li><a href="#">Entrar</a></li>
+                <li><a href="#">Cadastre-se</a></li>
+            </ul>
+
+            <!--Agora no mesmo "nav" irei criar o título e o restante da navegação-->
+            <h3 class="titulo-servicos"><!--Aqui além do título será inserido junto o ícone de serviços-->
+                <img src="icons/servicos.png" alt="Serviços" class="servicos-icone">
+                Serviços
+            </h3>
+            <ul class="links-servicos"> <!--Lista para os links dos serviços disponíveis-->
+                <li><a href="#">Empréstimo</a></li>
+                <li><a href="#">Consignado</a></li>
+                <li><a href="#">Dúvidas</a></li>
+            </ul>
+        </nav>
+    </aside>
+    <main>
+        <header> <!--Criando o cabeçalho-->
+            <div class="logo"> <!--Criando uma div só para a logo-->
+                <img src="img/logo-credifacil.png" alt="Logo Credifácil" >
+            </div>
+
+            <div class="slideshow"> <!--Criando uma div e classe exclusiva pra os slides-->
+                <div class="slide ativado"> <!--Primeiro slide, já ativado por padrão-->
+                    <img src="img/promo-1.png" alt="Imagem 1">
+                </div>
+                <div class="slide">
+                    <img src="img/promo-2.png" alt="Imagem 2">
+                </div>
+                <div class="indicadores"> <!--Criando os indicadores dos slides-->
+                    <span class="indicador ativado" data-slide="0"></span>
+                    <span class="indicador" data-slide="1"></span>
+                </div>
+            </div>
+        </header>
+
+        <section class="cards-container"> <!--Criando seção para os cards da página-->
+            <a href="pag-emprestimos.html" class="card">
+                <img src="img/card-emprestimo.png" alt="Empréstimo">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium, doloribus incidunt eius, aliquam nesciunt odit, similique debitis voluptatum laboriosam rerum officiis corrupti vero ab recusandae sunt enim. Aut, sapiente nostrum.</p>
+            </a>
+            <div class="card">
+                <img src="img/card-financiamento.png" alt="Financiamento">
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Doloribus cupiditate non soluta facilis quaerat error nesciunt sapiente ut, impedit, culpa porro fugit corrupti a exercitationem molestiae explicabo incidunt ipsa placeat.</p>
+            </div>
+            <div class="card">
+                <img src="img/card-antecipacao.png" alt="Antecipação de Recibos">
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Error dolores necessitatibus, accusantium vitae officiis maiores non tempore asperiores quibusdam earum! Nobis quas veritatis perferendis, consectetur ab beatae laboriosam obcaecati harum?</p>
+            </div>
+        </section>
+        <footer> <!--Criando o rodapé da página-->
+            <div class="conteudo-rodape">
+                <div class="icones-redesocial"> <!--Criando div para os adicionar os icones
+                                                          das redes sociais da empresa-->
+                    <a href="#"><img src="icons/twitter.png" alt="X"></a>
+                    <a href="#"><img src="icons/instagram.png" alt="Instagram"></a>
+                    <a href="#"><img src="icons/youtube.png" alt="Youtube"></a>
+                    <a href="#"><img src="icons/linkedin.png" alt="LinkedIn"></a>
+                </div>
+
+                <div class="links-rodape"> <!--Classe para os links em geral-->
+                    <div class="links-coluna"> <!--Div para dividir as colunas-->
+                        <h4>Serviços</h4>
+                        <ul>
+                            <li><a href="#">Empréstimos</a></li>
+                            <li><a href="#">Financiamentos</a></li>
+                            <li><a href="#">Investimentos</a></li>
+                            <li><a href="pag-seja-cliente.html" class="seja-membro">Seja cliente</a></li>
+                        </ul>
+                    </div>
+                    <div class="links-coluna"> <!--Segunda coluna de Links-->
+                        <h4>Institucional</h4>
+                        <ul>
+                            <li><a href="#">Sobre Nós</a></li>
+                            <li><a href="#">Contato</a></li>
+                            <li><a href="#">Trabalhe Conosco</a></li>
+                            <li><a href="#">Política de Privacidade</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+        </footer>
+    </main>
+</body>
+</html>

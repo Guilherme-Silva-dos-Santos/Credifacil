@@ -1,0 +1,241 @@
+body{ /* Estilização do corpo da página */
+    display: flex; /*Deixando o layout da página flexível*/
+    margin: 0; /*Removendo margens padrão do navegador*/
+    background-color: #fff; /*Definindo a cor de fundo como branco*/
+    min-height: 100vh; /*Garantindo que o corpo ocupe no mínimo a altura total da janela de visualização*/
+}
+.menu-lateral{ /* Estilização do menu lateral */
+    width: 150px; /*Definindo a largura fixa do menu lateral*/
+    background-color: #004E7C; /*Definindo a cor de fundo do menu lateral*/
+    color: white; /*Definindo a cor do texto como branco*/
+    padding: 20px; /*Adicionando espaçamento interno ao menu lateral*/ 
+}
+.menu-lateral span{ /* Estilização do título do menu lateral */
+    font-size: 24px;  /*Definindo o tamanho da fonte do título*/
+}
+.conta{ /* Estilização da seção de conta do usuário */
+    display: flex; /*Definindo a seção como um contêiner flexível*/
+    align-items: center; /*Alinhando os itens ao centro verticalmente*/
+    gap: 10px; /*Adicionando espaçamento entre os itens*/
+}
+.avatar{ /* Estilização do avatar do usuário */
+    width: 30px; /*Definindo a largura do avatar*/
+}
+.links-conta{ /* Estilização dos links da seção de conta */
+    display: flex; /*Definindo a seção como um contêiner flexível*/
+    flex-direction: column; /*Organizando os links em uma coluna*/
+    gap: 5px; /*Adicionando espaçamento entre os links*/
+    font-size: 18px; /*Definindo o tamanho da fonte dos links*/
+    padding: 15px; /*Adicionando espaçamento interno à seção de links*/
+    border-bottom: 2px solid white /*Adicionando uma borda inferior branca à seção de links*/
+}
+.links-conta a{ /* Estilização dos links */
+    color: white; /*Definindo a cor dos links como branco*/
+}
+.titulo-servicos{ /*Estilizando o título da navegação serviços*/
+    font-size: 24px; /*Definindo o tamanho da fonte do título*/
+    display: flex; /*Definindo o título como um contêiner flexível*/
+    align-items: center;  /*Alinhando os itens ao centro verticalmente*/
+    gap: 10px; /*Adicionando espaçamento entre os itens*/
+}
+.servicos-icone{ /* Estilização do ìcone serviços*/
+    width: 30px; /*Definindo a largura do ícone*/
+}
+
+.links-servicos{ /* Estilização dos links da seção de serviços */
+    display: flex; /*Definindo a seção como um contêiner flexível*/
+    flex-direction: column; /*Organizando os links em uma coluna*/
+    gap: 5px; /*Adicionando espaçamento entre os links*/
+    font-size: 18px; /*Definindo o tamanho da fonte dos links*/
+    padding: 15px; /*Adicionando espaçamento interno à seção de links*/
+    border-bottom: 2px solid white; /*Adicionando uma borda inferior branca à seção de links*/
+}
+.links-servicos a{ /* Estilização dos links */
+    color: white; /*Definindo a cor dos links como branco*/
+}
+main{
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+}
+.logo{
+    height: 150px; /*Ajustando o tamanho da logo*/
+}
+.logo img{ /*ajustando o tamanho da imagem*/
+    padding-top: 0px;
+    padding-bottom: 25px;
+    height: 150px;
+    width: 250px;
+}
+.descricao-sejaNossoCliente{
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    max-width: 800px;
+    margin: 0 auto;
+}
+.banner-sejaNossoCliente{
+    padding: 2.5rem;
+    max-width: 700px;
+    text-align: center;
+}
+.banner-sejaNossoCliente p{
+    font-size: 16px;
+    line-height: 1.8; /*Espaçamento entre linhas*/
+    text-align: justify;
+    margin-top: 20px;
+}
+.banner-sejaNossoCliente img{
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+}
+.formulario-registrese{
+    background-color: #f9f9f9;
+    padding: 50px 60px;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgb(0, 0, 0, 0.1);
+    max-width: 700px;
+    margin: auto;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.formulario-registrese h2{
+    text-align: left;
+    color: #004E7C;
+    margin-bottom: 25px;
+    font-size: 28px;
+}
+
+.campo{ /*Estilização dos campos dos formulários*/
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
+}
+.campo label{
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 8px;
+    font-size: 16px;
+    align-self: flex-start; /*Mantendo os labels à esquerda*/
+}
+/*estilização dos inputs e selects*/
+.campo input[type="text"],
+.campo input[type="email"],
+.campo select{
+    padding: 12px;
+    border: 2px solid #ddd;
+    border-radius: 4px;
+    font-size: 16px;
+    transition: border 0.3s;
+    width: 100%;
+    max-width: 500px;
+}
+.campo input[type="text"]:focus,
+.campo input[type="email"]:focus,
+.campo select:focus{
+    outline: none;
+    border-color: #004E7C;
+}
+
+.escolha-radio{ /*estilização específica só dos radios*/
+    display: flex;
+    gap: 20px;
+    margin-top: 8px;
+}
+
+.escolha-radio label{
+    display: flex;
+    align-items: center;
+    font-weight: normal;
+}
+.campo input[type="radio"]{
+    margin-right: 5px;
+    width: 18px;
+    height: 18px;
+    cursor: pointer;
+}
+button[type="submit"]{
+    width: 100%;
+    max-width: 500px;
+    padding: 15px;
+    background-color: #004E7C;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    font-size: 18px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    margin: 20px auto;
+    display: block;
+}
+button[type="submit"]:hover{
+    background-color: #003a5c;
+}
+footer{ /*Estilização do Rodapé*/
+    background: #333; /*Definindo a cor de fundo do rodapé*/
+    color: #fff; /*Definindo a cor do texto do rodapé*/
+    padding: 3rem 2rem; /*Adicionando espaçamento interno ao rodapé*/
+    margin-top: 0; /*Adicionando espaçamento superior ao rodapé*/
+    z-index: 20;
+}
+.conteudo-rodape{ /*Estilização do conteúdo do rodapé*/
+    max-width: 1200px; /*Definindo largura máxima do conteúdo do rodapé*/
+    margin: 0 auto; /*Centralizando o conteúdo do rodapé*/
+}
+
+.icones-redesocial{ /*Estilização da div dos icones*/
+    display: flex; /*Definindo a div como um contêiner flexível*/
+    gap: 1.5rem; /*Adicionando espaçamento entre os ícones*/
+    justify-content: center; /*Centralizando os ícones horizontalmente*/
+    margin-bottom: 2rem; /*Adicionando espaçamento inferior à div dos ícones*/
+    float: left;
+}
+.icones-redesocial a{
+    transition: transform 0.3s; /*Adicionando uma transição suave para o efeito hover
+                                    nos ícones*/
+}
+.icones-redesocial a:hover{ /* Estilização dos ícones ao passar o mouse */
+    transform: scale(1.2); /*Aumentando o tamanho dos ícones ao passar o mouse*/
+}
+.icones-redesocial img{ /*Estilização dos ícones das redes sociais*/
+    width: 32px; /*Definindo a largura dos ícones*/
+    height: 32px; /*Definindo a altura dos ícones*/
+    filter: brightness(0) invert(1); /*Deixando os ícones em branco*/
+}
+.links-rodape{ /*Estilização das colunas e links*/
+    display: flex; /*Definindo a Div como um container flexível*/
+    justify-content: center; /*Centralizando os conteúdos horizontalmente*/
+    gap: 4rem; /*Espaçamento entre os links*/
+    flex-wrap: wrap; /*Permitindo que os links quebrem a linha se necessário*/
+}
+
+.links-coluna h4{
+    margin-bottom: 1rem; /*Adicionando espaçamento inferior com relação da coluna*/
+    font-size: 1.1rem; /*Definindo o tamanho da fonte*/
+}
+.links-coluna ul{
+    list-style: none; /*Tirano as 'bolinhas' que demarcam os itens das colunas*/
+    padding: 0; /*Espaçamento interno*/
+}
+.links-coluna li{
+    margin-bottom: 0.5rem; /*Espaçamento inferior*/
+}
+.links-coluna a{
+    color: #ccc; /*Definindo as cores dos links*/
+    text-decoration: none;/*Tirando a decoração do texto*/
+    transition: 0.3s; /*transição suave com o efeito hover sobre os links*/
+}
+.links-coluna a:hover{ /*mudando a cor do link após de ser clicado nele*/
+    color: #fff;
+}
+.links-coluna a.seja-membro{ /*estilização do link seja membro*/
+    color: #ffd700;
+    font-weight: bold;
+}
+.links-coluna a.seja-membro:hover{/*mudando a cor do link após de ser clicado nele*/
+    color: #ffed4e;
+}

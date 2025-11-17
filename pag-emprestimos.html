@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CrediFácil Empréstimos</title>
+    <link rel="stylesheet" href="css/pag-emprestimos.css">
+</head>
+<body>
+    <!--Criando o menu lateral-->
+    <aside class="menu-lateral">
+        <div class="conta"> <!--Aqui ficará o ícone e o título "Conta"-->
+            <img src="icons/login-usuario.png" alt="Avatar Usuário" class="avatar">
+            <span>Conta</span>
+        </div>
+        <!--Criando uma navegação única para os links da conta e para ajustes-->
+        <nav>
+            <ul class="links-conta">
+                <li><a href="#">Entrar</a></li>
+                <li><a href="#">Cadastre-se</a></li>
+            </ul>
+
+            <!--Agora no mesmo "nav" irei criar o título e o restante da navegação-->
+            <h3 class="titulo-servicos"><!--Aqui além do título será inserido junto o ícone de serviços-->
+                <img src="icons/servicos.png" alt="Serviços" class="servicos-icone">
+                Serviços
+            </h3>
+            <ul class="links-servicos"> <!--Lista para os links dos serviços disponíveis-->
+                <li><a href="#">Empréstimo</a></li>
+                <li><a href="#">Consignado</a></li>
+                <li><a href="#">Dúvidas</a></li>
+            </ul>
+        </nav>
+    </aside>
+    <main>
+        <header class="logo"> <!--Criando o cabeçalho somente para a Logo no topo da página-->
+            <img src="img/logo-credifacil.png" alt="Logotipo">
+        </header>
+
+        <section class="cards-emprestimos"> <!--Criando a section somente para os cards dos empréstimos-->
+            <div class="cards-empr"> <!--Criando a classe para os cards-->
+                <img src="img/empr-pessoal.png" alt="Empréstimo Pessoal">
+                <h3>Pessoal</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Est fuga, modi vero eum a recusandae maxime repellat, nemo amet provident nostrum libero, aut maiores. Nulla eos sunt commodi consectetur similique.</p>
+            </div>
+                
+            <div class="cards-empr">
+                <img src="img/empr-consignado.png" alt="Empréstimo Consignado">
+                <h3>Consignado</h3>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Provident ad temporibus ratione ipsa voluptas vitae quod eveniet rem voluptatem quaerat tempore, veritatis molestiae similique adipisci odit dicta, ipsum sint natus.</p>
+            </div>
+        </section>
+
+        <section class="simulacao-emprestimo"> <!--Simulação dos empréstimos-->
+           
+            <h2 class="titulo-simule"><b>Simule seu Empréstimo</b></h2>
+           
+            <div class="tipo-de-emprestimo"> <!--Criando classe para os dois radiobutton-->
+                <h3>Tipo</h3>
+                <label>
+                    <input type="radio" name="tipo" value="pessoal" required>Pessoal
+                </label>
+                <label>
+                   <input type="radio" name="tipo" value="consignado" required>Consignado
+                </label>
+                
+                <br> <!--Quebrando linha-->
+
+                <h3>Valor</h3> <!--Segundo radiobutton-->
+                <label >
+                    <input type="radio" name="valor" value="999" required>R$ 999,00
+                </label>
+                <label> 
+                    <input type="radio" name="valor" value="9999.99" required>R$ 9999,99
+                </label>
+
+                <br><!--Quebrando linha-->
+
+                <h4>Ou</h4> <!--Label para o usuário digitar o valor desejado-->
+                <label for="valor-digitado">
+                    <input type="text" name="valor" id="valor-digitado" placeholder="Digite um Valor">
+                </label>
+
+                <br>
+
+                <h3>Parcelas</h3>
+                <select name="parcelas" id="opcao-parcela"> <!--Opções de parcelas-->
+                    <option value="1x">1x</option>
+                    <option value="2x">2x</option>
+                    <option value="3x">3x</option>
+                    <option value="4x">4x</option>
+                </select>
+
+                <br>
+                <br>
+                <!--Botão de envio-->
+                <input type="submit" value="Simular" class="btnsimular efeito-1">
+            </div>
+
+            <div class="resultado-emprestimo"> <!--Div para os resultados-->
+                <h3>Resultado</h3>
+                <form action="emprestimo-simulado" method="post">
+                    <label>Empréstimo tipo </label>
+                    <input type="text" placeholder="Pessoal/Consignado" id="tipo-resultado" readonly>
+                    <br>
+                    <br> 
+                    <label>Valor de </label>
+                    <input type="text" placeholder="Valor" id="valor-resultado" readonly>
+                    <br>
+                    <br>
+                    <label>Parcelas de </label>
+                    <input type="text" placeholder="xParcelas" id="parcelas-resultado" readonly>
+                </form>
+            </div>
+
+            <div class="btsejaCliente"> <!--div para formatar o botão-->
+                <br>
+                <a href="pag-seja-cliente.html"><button class="efeito efeito-1">Seja Cliente</button></a>
+            </div>
+        </section>
+        <footer> <!--Criando o rodapé da página-->
+            <div class="conteudo-rodape">
+                <div class="icones-redesocial"> <!--Criando div para os adicionar os icones
+                                                          das redes sociais da empresa-->
+                    <a href="#"><img src="icons/twitter.png" alt="X"></a>
+                    <a href="#"><img src="icons/instagram.png" alt="Instagram"></a>
+                    <a href="#"><img src="icons/youtube.png" alt="Youtube"></a>
+                    <a href="#"><img src="icons/linkedin.png" alt="LinkedIn"></a>
+                </div>
+
+                <div class="links-rodape"> <!--Classe para os links em geral-->
+                    <div class="links-coluna"> <!--Div para dividir as colunas-->
+                        <h4>Serviços</h4>
+                        <ul>
+                            <li><a href="#">Empréstimos</a></li>
+                            <li><a href="#">Financiamentos</a></li>
+                            <li><a href="#">Investimentos</a></li>
+                            <li><a href="pag-seja-cliente.html" class="seja-membro">Seja Cliente</a></li>
+                        </ul>
+                    </div>
+                    <div class="links-coluna"> <!--Segunda coluna de Links-->
+                        <h4>Institucional</h4>
+                        <ul>
+                            <li><a href="#">Sobre Nós</a></li>
+                            <li><a href="#">Contato</a></li>
+                            <li><a href="#">Trabalhe Conosco</a></li>
+                            <li><a href="#">Política de Privacidade</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+        </footer>
+    </main>
+</body>
+</html>

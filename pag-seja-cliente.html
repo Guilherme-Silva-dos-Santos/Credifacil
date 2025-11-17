@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Credifácil Empréstimos</title>
+    <link rel="stylesheet" href="css/pag-seja-cliente.css">
+</head>
+<body>
+     <!--Criando o menu lateral-->
+    <aside class="menu-lateral">
+        <div class="conta"> <!--Aqui ficará o ícone e o título "Conta"-->
+            <img src="icons/login-usuario.png" alt="Avatar Usuário" class="avatar">
+            <span>Conta</span>
+        </div>
+        <!--Criando uma navegação única para os links da conta e para ajustes-->
+        <nav>
+            <ul class="links-conta">
+                <li><a href="#">Entrar</a></li>
+                <li><a href="#">Cadastre-se</a></li>
+            </ul>
+
+            <!--Agora no mesmo "nav" irei criar o título e o restante da navegação-->
+            <h3 class="titulo-servicos"><!--Aqui além do título será inserido junto o ícone de serviços-->
+                <img src="icons/servicos.png" alt="Serviços" class="servicos-icone">
+                Serviços
+            </h3>
+            <ul class="links-servicos"> <!--Lista para os links dos serviços disponíveis-->
+                <li><a href="#">Empréstimo</a></li>
+                <li><a href="#">Consignado</a></li>
+                <li><a href="#">Dúvidas</a></li>
+            </ul>
+        </nav>
+    </aside>
+
+    <main>
+        <header class="logo"> <!--Criando o cabeçalho somente para a Logo no topo da página-->
+            <img src="img/logo-credifacil.png" alt="Logotipo">
+        </header>
+
+        <section class="descricao-sejaNossoCliente"> <!--Div para o banner e descrição da seção seja nosso cliente-->
+            <div class="banner-sejaNossoCliente">
+                 <img src="img/seja-nosso-cliente.png" alt="Seja Nosso Cliente">
+                 <h3><b>Sobre Nós</b></h3>
+                 <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Facilis quis quae nobis nihil doloribus dolor nam, fugiat excepturi impedit reprehenderit aperiam veritatis quod qui, ut atque ipsum id, laudantium delectus! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequuntur alias laborum quos qui unde, possimus tempora animi libero officia in beatae blanditiis, illum ad ullam exercitationem nisi? Nobis, doloremque consequatur?Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat illum ducimus quidem harum optio a facere nostrum quod, libero deleniti tempore quas? Fuga inventore nesciunt ipsam repudiandae laudantium blanditiis nihil!</p>
+            </div>
+        </section>
+
+        <section class="formulario-registrese"> <!--Criando formulário para o resgistre-se-->
+            <h2>Registre-se</h2>
+            <div class="campo">
+                <label for="nome">Nome Completo:</label>
+                <input type="text" id="nome" name="nome" required>
+            </div>
+            <div class="campo">
+                <label for="email">Email:</label>
+                <input type="email" name="email" id="email" required>
+            </div>
+            <div class="campo">
+                <label for="telefone">Telefone:</label>
+                <input type="text" name="telefone" id="telefone" placeholder="( )_____-____" required>
+            </div>
+            <div class="campo">
+                <label for="tipo-servico">Serviço:</label>
+                <select name="tipo-servico" id="tipo-servico">
+                    <option value="emprestimo">Empréstimo</option>
+                    <option value="financiamento">Financiamento</option>
+                    <option value="antecipacao">Antecipação de Recibos</option>
+                </select>
+            </div>
+            <div class="campo">
+                <label>Aposentado:</label>
+                <div class="escolha-radio">
+                     <label id="aposentado">
+                    <input type="radio" name="aposentado" id="sim">Sim
+                        </label>
+                    <label id="aposentado">
+                        <input type="radio" name="aposentado" id="nao">Não
+                    </label>
+                </div>
+            </div>
+            <button type="submit">Cadastrar</button>
+        </section>
+         <footer> <!--Criando o rodapé da página-->
+            <div class="conteudo-rodape">
+                <div class="icones-redesocial"> <!--Criando div para os adicionar os icones
+                                                          das redes sociais da empresa-->
+                    <a href="#"><img src="icons/twitter.png" alt="X"></a>
+                    <a href="#"><img src="icons/instagram.png" alt="Instagram"></a>
+                    <a href="#"><img src="icons/youtube.png" alt="Youtube"></a>
+                    <a href="#"><img src="icons/linkedin.png" alt="LinkedIn"></a>
+                </div>
+
+                <div class="links-rodape"> <!--Classe para os links em geral-->
+                    <div class="links-coluna"> <!--Div para dividir as colunas-->
+                        <h4>Serviços</h4>
+                        <ul>
+                            <li><a href="#">Empréstimos</a></li>
+                            <li><a href="#">Financiamentos</a></li>
+                            <li><a href="#">Investimentos</a></li>
+                            <li><a href="pag-seja-cliente.html" class="seja-membro">Seja Cliente</a></li>
+                        </ul>
+                    </div>
+                    <div class="links-coluna"> <!--Segunda coluna de Links-->
+                        <h4>Institucional</h4>
+                        <ul>
+                            <li><a href="#">Sobre Nós</a></li>
+                            <li><a href="#">Contato</a></li>
+                            <li><a href="#">Trabalhe Conosco</a></li>
+                            <li><a href="#">Política de Privacidade</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+        </footer>
+    </main>
+</body>
+</html>

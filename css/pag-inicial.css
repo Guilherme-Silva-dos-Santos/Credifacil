@@ -3,12 +3,14 @@ body{ /* Estilização do corpo da página */
     margin: 0; /*Removendo margens padrão do navegador*/
     background-color: #fff; /*Definindo a cor de fundo como branco*/
     min-height: 100vh; /*Garantindo que o corpo ocupe no mínimo a altura total da janela de visualização*/
+    font-family: Arial, Helvetica, sans-serif;
 }
+
 .menu-lateral{ /* Estilização do menu lateral */
     width: 150px; /*Definindo a largura fixa do menu lateral*/
     background-color: #004E7C; /*Definindo a cor de fundo do menu lateral*/
     color: white; /*Definindo a cor do texto como branco*/
-    padding: 20px; /*Adicionando espaçamento interno ao menu lateral*/
+    padding: 20px; /*Adicionando espaçamento interno ao menu lateral*/ 
 }
 .menu-lateral span{ /* Estilização do título do menu lateral */
     font-size: 24px;  /*Definindo o tamanho da fonte do título*/
@@ -101,7 +103,7 @@ main{
     object-fit: contain; /*Mantendo a proporção das imagens dentro do slide*/
 }
 .indicadores{ /* Estilização dos indicadores dos slides */
-    height: 1px;
+    height: 1px;/*Definindo a altura dos indicadores*/
     position: absolute; /*Posicionando os indicadores de forma absoluta dentro do slideshow*/
     bottom: 10px; /*Posicionando os indicadores a 10px do fundo do slideshow*/
     left: 50%; /*Centralizando os indicadores horizontalmente*/
@@ -115,4 +117,105 @@ main{
     height: 12px; /*Definindo a altura dos indicadores*/
     border-radius: 50%; /*Tornando os indicadores circulares*/
     background: rgba(0, 0, 0, 0.7); /*Definindo a cor de fundo dos indicadores*/
+}
+.cards-container{ /* Estilização do container dos cards */
+    margin: 2rem; /*Adicionando margem ao redor do container*/
+    display: flex; /*Definindo o container como um contêiner flexível*/
+    gap: 2rem; /*Adicionando espaçamento entre os cards*/
+    padding: 2rem; /*Adicionando espaçamento interno ao container*/
+    justify-content: center; /*Centralizando os cards horizontalmente*/
+    flex-wrap: wrap; /*Permitindo que os cards quebrem para a próxima linha se necessário*/
+    cursor: pointer; /*Alterando o cursor para indicar que os cards são clicáveis*/
+}
+.card{ /* Estilização dos cards */
+    background-color: #f5f5f5; /*Definindo a cor de fundo dos cards*/
+    border-radius: 8px; /*Adicionando bordas arredondadas aos cards*/
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1); /*Adicionando sombra aos cards*/
+    padding: 1.5rem; /*Adicionando espaçamento interno aos cards*/
+    max-width: 300px; /*Definindo a largura máxima dos cards*/
+    text-align: center; /*Centralizando o texto dentro dos cards*/
+    transition: transform 0.3s, box-shadow 0.3s; /*Adicionando uma transição suave para o efeito hover*/
+    text-decoration: none; /*Removendo decoração de texto*/
+    color: inherit; /*Mantendo a cor do texto herdada*/
+    display: block; /*Definindo o card como um bloco clicável*/
+}
+.card:hover{ /* Estilização do card ao passar o mouse */
+    transform: translateY(-5px); /*Elevando o card levemente ao passar o mouse*/
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15); /*Aumentando a sombra do card ao passar o mouse*/
+}
+.card img{ /* Estilização das imagens dos cards */
+    width: 100%; /*Definindo a largura das imagens para ocupar toda a largura do card*/
+    height: 260px; /*Mantendo a proporção das imagens*/
+    object-fit: cover;
+    border-radius: 4px; /*Adicionando bordas arredondadas às imagens*/
+    margin-bottom: 1rem; /*Adicionando espaçamento inferior às imagens*/
+}
+.card p{ /* Estilização do texto dos cards */
+    font-size: 16px; /*Definindo o tamanho da fonte do texto*/
+    color: #666; /*Definindo a cor do texto*/
+    line-height: 1.6; /*Definindo o espaçamento entre linhas do texto*/
+}
+footer{ /*Estilização do Rodapé*/
+    background: #333; /*Definindo a cor de fundo do rodapé*/
+    color: #fff; /*Definindo a cor do texto do rodapé*/
+    padding: 3rem 2rem; /*Adicionando espaçamento interno ao rodapé*/
+    margin-top: 4rem; /*Adicionando espaçamento superior ao rodapé*/
+    z-index: 20;
+}
+.conteudo-rodape{ /*Estilização do conteúdo do rodapé*/
+    max-width: 1200px; /*Definindo largura máxima do conteúdo do rodapé*/
+    margin: 0 auto; /*Centralizando o conteúdo do rodapé*/
+}
+
+.icones-redesocial{ /*Estilização da div dos icones*/
+    display: flex; /*Definindo a div como um contêiner flexível*/
+    gap: 1.5rem; /*Adicionando espaçamento entre os ícones*/
+    justify-content: center; /*Centralizando os ícones horizontalmente*/
+    margin-bottom: 2rem; /*Adicionando espaçamento inferior à div dos ícones*/
+    float: left;
+}
+.icones-redesocial a{
+    transition: transform 0.3s; /*Adicionando uma transição suave para o efeito hover
+                                    nos ícones*/
+}
+.icones-redesocial a:hover{ /* Estilização dos ícones ao passar o mouse */
+    transform: scale(1.2); /*Aumentando o tamanho dos ícones ao passar o mouse*/
+}
+.icones-redesocial img{ /*Estilização dos ícones das redes sociais*/
+    width: 32px; /*Definindo a largura dos ícones*/
+    height: 32px; /*Definindo a altura dos ícones*/
+    filter: brightness(0) invert(1); /*Deixando os ícones em branco*/
+}
+.links-rodape{ /*Estilização das colunas e links*/
+    display: flex; /*Definindo a Div como um container flexível*/
+    justify-content: center; /*Centralizando os conteúdos horizontalmente*/
+    gap: 4rem; /*Espaçamento entre os links*/
+    flex-wrap: wrap; /*Permitindo que os links quebrem a linha se necessário*/
+}
+
+.links-coluna h4{
+    margin-bottom: 1rem; /*Adicionando espaçamento inferior com relação da coluna*/
+    font-size: 1.1rem; /*Definindo o tamanho da fonte*/
+}
+.links-coluna ul{
+    list-style: none; /*Tirano as 'bolinhas' que demarcam os itens das colunas*/
+    padding: 0; /*Espaçamento interno*/
+}
+.links-coluna li{
+    margin-bottom: 0.5rem; /*Espaçamento inferior*/
+}
+.links-coluna a{
+    color: #ccc; /*Definindo as cores dos links*/
+    text-decoration: none;/*Tirando a decoração do texto*/
+    transition: 0.3s; /*transição suave com o efeito hover sobre os links*/
+}
+.links-coluna a:hover{ /*mudando a cor do link após de ser clicado nele*/
+    color: #fff;
+}
+.links-coluna a.seja-membro{ /*estilização do link seja membro*/
+    color: #ffd700;
+    font-weight: bold;
+}
+.links-coluna a.seja-membro:hover{/*mudando a cor do link após de ser clicado nele*/
+    color: #ffed4e;
 }

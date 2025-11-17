@@ -1,0 +1,256 @@
+body{ /* Estilização do corpo da página */
+    display: flex; /*Deixando o layout da página flexível*/
+    margin: 0; /*Removendo margens padrão do navegador*/
+    background-color: #fff; /*Definindo a cor de fundo como branco*/
+    min-height: 100vh; /*Garantindo que o corpo ocupe no mínimo a altura total da janela de visualização*/
+}
+
+.menu-lateral{ /* Estilização do menu lateral */
+    width: 150px; /*Definindo a largura fixa do menu lateral*/
+    background-color: #004E7C; /*Definindo a cor de fundo do menu lateral*/
+    color: white; /*Definindo a cor do texto como branco*/
+    padding: 20px; /*Adicionando espaçamento interno ao menu lateral*/ 
+}
+.menu-lateral span{ /* Estilização do título do menu lateral */
+    font-size: 24px;  /*Definindo o tamanho da fonte do título*/
+}
+.conta{ /* Estilização da seção de conta do usuário */
+    display: flex; /*Definindo a seção como um contêiner flexível*/
+    align-items: center; /*Alinhando os itens ao centro verticalmente*/
+    gap: 10px; /*Adicionando espaçamento entre os itens*/
+}
+.avatar{ /* Estilização do avatar do usuário */
+    width: 30px; /*Definindo a largura do avatar*/
+}
+.links-conta{ /* Estilização dos links da seção de conta */
+    display: flex; /*Definindo a seção como um contêiner flexível*/
+    flex-direction: column; /*Organizando os links em uma coluna*/
+    gap: 5px; /*Adicionando espaçamento entre os links*/
+    font-size: 18px; /*Definindo o tamanho da fonte dos links*/
+    padding: 15px; /*Adicionando espaçamento interno à seção de links*/
+    border-bottom: 2px solid white /*Adicionando uma borda inferior branca à seção de links*/
+}
+.links-conta a{ /* Estilização dos links */
+    color: white; /*Definindo a cor dos links como branco*/
+}
+.titulo-servicos{ /*Estilizando o título da navegação serviços*/
+    font-size: 24px; /*Definindo o tamanho da fonte do título*/
+    display: flex; /*Definindo o título como um contêiner flexível*/
+    align-items: center;  /*Alinhando os itens ao centro verticalmente*/
+    gap: 10px; /*Adicionando espaçamento entre os itens*/
+}
+.servicos-icone{ /* Estilização do ìcone serviços*/
+    width: 30px; /*Definindo a largura do ícone*/
+}
+
+.links-servicos{ /* Estilização dos links da seção de serviços */
+    display: flex; /*Definindo a seção como um contêiner flexível*/
+    flex-direction: column; /*Organizando os links em uma coluna*/ 
+    gap: 5px; /*Adicionando espaçamento entre os links*/
+    font-size: 18px; /*Definindo o tamanho da fonte dos links*/
+    padding: 15px; /*Adicionando espaçamento interno à seção de links*/
+    border-bottom: 2px solid white; /*Adicionando uma borda inferior branca à seção de links*/
+}
+.links-servicos a{ /* Estilização dos links */
+    color: white; /*Definindo a cor dos links como branco*/
+}
+.logo{
+    height: 150px; /*Ajustando o tamanho da logo*/
+}
+.logo img{ /*ajustando o tamanho da imagem*/
+    padding-top: 0px;
+    padding-bottom: 25px;
+    height: 150px;
+    width: 250px;
+}
+.cards-emprestimos{ /*estilização do container dos cards*/
+    margin: 2rem;
+    display: flex; /*Definindo o container como flexível para melhor organização*/
+    gap: 4rem; /*espaçamentos entre os cards*/
+    padding: 0 50px;
+    justify-content: space-between;/*alinhando-os horizontalmente*/
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.cards-empr{ /*estilização das divs dos cards*/
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    padding: 1.5rem;
+    max-width: 500px;
+    text-align: center;
+    text-decoration: none;
+}
+
+.cards-emprestimos img{ /*ajustando tamanho das imagens dos cards*/
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+}
+.simulacao-emprestimo{  /*Ajustando as divs para que fiquem uma embaixo da outra*/
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 1rem;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    background-color: lightblue;
+}
+.titulo-simule{ /*Estilizando o título das divs*/
+    color: darkblue;
+    font-size: 40px;
+}
+ 
+.simulacao-emprestimo h3{
+    font-size: 25px;
+}
+
+.simulacao-emprestimo h4{
+    font-size: 20;
+}
+.simulacao-emprestimo ::placeholder{
+    text-align: center;
+}
+#valor-digitado{ /*Estilizando o campo de texto do valor desejado que é digitado*/
+    width: 150px;
+    border-radius: 4px;
+    height: 25px;
+}
+#opcao-parcela{ /*estilizando o tamanho da seleção e texto dentro das opções*/
+    width: 50px;
+    border-radius: 4px;
+    height: 25px;
+    text-align: center;
+}
+.btnsimular{ /*Estilização do botão*/
+    text-align: center;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: rgb(61, 61, 247);
+    border: none;
+    color: white;
+    padding: 10px;
+    margin: 5px;
+    font-size: 24px;
+    border-radius: 4px;
+    position: relative;
+    box-sizing: border-box;
+    cursor: pointer;
+    z-index: 1;
+}
+/*Estilizando os campos de texto onde mostram os resultados*/
+#tipo-resultado{
+    width: 150px;
+    border-radius: 4px;
+    height: 25px;
+}
+
+#valor-resultado{
+    width: 50px;
+    border-radius: 4px;
+    height: 25px;
+}
+#parcelas-resultado{
+    width: 100px;
+    border-radius: 4px;
+    height: 25px;
+}
+.btsejaCliente{ /*Estilização do botão seja cliente*/
+    text-align: center;
+    margin-top: 3rem;
+}
+.btsejaCliente a{
+    color: white;
+    text-decoration: none;
+}
+
+.efeito{
+    background-color: blue;
+    border: none;
+    color: white;
+    padding: 10px;
+    margin: 5px;
+    font-size: 24px;
+    border-radius: 4px;
+    position: relative;
+    box-sizing: border-box;
+    cursor: pointer;
+    transition: all 0s ease;
+}
+.efeito-1::before{ /*aplicando efeito no botão*/
+    content: '';
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    background: rgb(255, 255, 255, 0.3);
+    border-radius: 4px;
+    transition: all 0s ease;
+}
+.efeito-1:hover::before{
+    opacity: 10;
+}
+footer{ /*Estilização do Rodapé*/
+    background: #333; /*Definindo a cor de fundo do rodapé*/
+    color: #fff; /*Definindo a cor do texto do rodapé*/
+    padding: 3rem 2rem; /*Adicionando espaçamento interno ao rodapé*/
+    margin-top: 0; /*Adicionando espaçamento superior ao rodapé*/
+    z-index: 20;
+}
+.conteudo-rodape{ /*Estilização do conteúdo do rodapé*/
+    max-width: 1200px; /*Definindo largura máxima do conteúdo do rodapé*/
+    margin: 0 auto; /*Centralizando o conteúdo do rodapé*/
+}
+
+.icones-redesocial{ /*Estilização da div dos icones*/
+    display: flex; /*Definindo a div como um contêiner flexível*/
+    gap: 1.5rem; /*Adicionando espaçamento entre os ícones*/
+    justify-content: center; /*Centralizando os ícones horizontalmente*/
+    margin-bottom: 2rem; /*Adicionando espaçamento inferior à div dos ícones*/
+    float: left;
+}
+.icones-redesocial a{
+    transition: transform 0.3s; /*Adicionando uma transição suave para o efeito hover
+                                    nos ícones*/
+}
+.icones-redesocial a:hover{ /* Estilização dos ícones ao passar o mouse */
+    transform: scale(1.2); /*Aumentando o tamanho dos ícones ao passar o mouse*/
+}
+.icones-redesocial img{ /*Estilização dos ícones das redes sociais*/
+    width: 32px; /*Definindo a largura dos ícones*/
+    height: 32px; /*Definindo a altura dos ícones*/
+    filter: brightness(0) invert(1); /*Deixando os ícones em branco*/
+}
+.links-rodape{ /*Estilização das colunas e links*/
+    display: flex; /*Definindo a Div como um container flexível*/
+    justify-content: center; /*Centralizando os conteúdos horizontalmente*/
+    gap: 4rem; /*Espaçamento entre os links*/
+    flex-wrap: wrap; /*Permitindo que os links quebrem a linha se necessário*/
+}
+
+.links-coluna h4{
+    margin-bottom: 1rem; /*Adicionando espaçamento inferior com relação da coluna*/
+    font-size: 1.1rem; /*Definindo o tamanho da fonte*/
+}
+.links-coluna ul{
+    list-style: none; /*Tirano as 'bolinhas' que demarcam os itens das colunas*/
+    padding: 0; /*Espaçamento interno*/
+}
+.links-coluna li{
+    margin-bottom: 0.5rem; /*Espaçamento inferior*/
+}
+.links-coluna a{
+    color: #ccc; /*Definindo as cores dos links*/
+    text-decoration: none;/*Tirando a decoração do texto*/
+    transition: 0.3s; /*transição suave com o efeito hover sobre os links*/
+}
+.links-coluna a:hover{ /*mudando a cor do link após de ser clicado nele*/
+    color: #fff;
+}
+.links-coluna a.seja-membro{ /*estilização do link seja membro*/
+    color: #ffd700;
+    font-weight: bold;
+}
+.links-coluna a.seja-membro:hover{/*mudando a cor do link após de ser clicado nele*/
+    color: #ffed4e;
+}
