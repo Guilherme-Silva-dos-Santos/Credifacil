@@ -22,6 +22,8 @@ Este projeto foi desenvolvido como parte de um trabalho acadêmico, cujo objetiv
 3. Abra a pasta "Credifácil"
 4. Abra o arquivo pag-inicial.html 
 
-### Versão 1.0
+### Versão 1.1
 - Menu lateral com links para os serviços
 - Cabeçalho com logo e slideshow (não funcional por ser só HTML e CSS)
+- Páginas responsivas
+- Estilização de páginas com suas respectivas singularidades 
